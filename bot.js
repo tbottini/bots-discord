@@ -1,3 +1,4 @@
+require("dotenv").config();
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const fs = require("fs");
@@ -157,7 +158,7 @@ function detectExpression(dictionnaire, key, receivedMessage) {
   }
 }
 
-bot_secret_token =
-  "Nzc2MTg0MzkyMTA0MTQ5MDU2.X6xMCw.SyLl0rHRjwnj3rB0wLl-rYG-0Po";
 
-client.login(bot_secret_token);
+
+
+client.login(process.env.DISCORD_TOKEN);
