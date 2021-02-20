@@ -4,3 +4,4 @@ word.json
 yarn.lock
 node_modules
 .env
+language.json
